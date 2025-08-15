@@ -44,11 +44,25 @@ button:hover {
 }
 
 #task-list li {
-  background: rgba(255, 255, 255, 0.801);
+  background: gray;
   padding: 10px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 10px;
   border-radius: 4px;
+}
+
+
+
+
+#filters {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#filters button.active {
+  background: #28a745;
 }
