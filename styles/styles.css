@@ -1,15 +1,14 @@
-*{margin: 0;
-padding: 0;
-}
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f408;
+  background: #f4f4f44a;
   max-width: 500px;
- margin: auto;
+  margin: auto;
   padding: 20px;
 }
 
-
+h1 {
+  text-align: center;
+}
 
 form {
   display: flex;
@@ -21,12 +20,11 @@ form {
   padding: 8px;
 }
 
-
 button {
   padding: 8px 12px;
   border: none;
   background: #007bff;
-  color: white;
+  color: black;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -35,26 +33,12 @@ button:hover {
   background: #0056b3;
 }
 
-
-
-#task-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
+.error {
+  display: none;
+  color: red;
+  font-size: 14px;
+  margin-left: 10px;
 }
-
-#task-list li {
-  background: gray;
-  padding: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border-radius: 4px;
-}
-
-
-
 
 #filters {
   margin-top: 15px;
@@ -64,5 +48,33 @@ button:hover {
 }
 
 #filters button.active {
-  background: #28a745;
+  background: greenyellow;
 }
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#task-list li {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+}
+
+#task-list span.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.editing input {
+  flex: 1;
+  padding: 5px;
+}
+
+#error-msg{color:red; display:none;}
