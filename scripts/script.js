@@ -35,3 +35,11 @@ document.getElementById('task-form').addEventListener('submit', function (e) {
   e.preventDefault();
 
 
+  const input = document.getElementById('task-input');
+  const errorMsg = document.getElementById('error-msg');
+
+  if (input.value.trim() === '') {
+    errorMsg.style.display = 'inline';
+    return;
+  }
+  errorMsg.style.display = 'none';
