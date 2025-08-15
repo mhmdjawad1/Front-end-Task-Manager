@@ -20,3 +20,17 @@ form {
   flex: 1;
   padding: 8px;
 }
+
+
+button {
+  padding: 8px 12px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #0056b3;
+}
