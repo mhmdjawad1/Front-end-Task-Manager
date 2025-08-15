@@ -59,3 +59,14 @@ document.getElementById('filters').addEventListener('click', function (e) {
     renderTasks(e.target.dataset.filter);6
   }
 });
+
+
+
+
+document.getElementById('task-list').addEventListener('click', function (e) {
+  const li = e.target.closest('li');
+  const index = li.dataset.index;
+  const task = tasks[index];
+
+  
+
