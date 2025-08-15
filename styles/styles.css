@@ -15,3 +15,8 @@ form {
   display: flex;
   gap: 10px;
 }
+
+#task-input {
+  flex: 1;
+  padding: 8px;
+}
