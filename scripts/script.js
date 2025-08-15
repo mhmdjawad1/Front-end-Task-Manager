@@ -85,3 +85,13 @@ document.getElementById('task-list').addEventListener('click', function (e) {
       li.replaceChild(input, spanOrInput);
       e.target.textContent = 'Save';
 
+          } else {
+     
+      const input = li.querySelector('input[type="text"]');
+      task.text = input.value.trim();
+      localStorage.setItem('tasks', JSON.stringify(tasks));
+      renderTasks();
+    }
+  }
+
+
