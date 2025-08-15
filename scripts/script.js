@@ -68,5 +68,11 @@ document.getElementById('task-list').addEventListener('click', function (e) {
   const index = li.dataset.index;
   const task = tasks[index];
 
-  
+   
+  if (e.target.classList.contains('toggle')) {
+    task.completed = e.target.checked;
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    renderTasks();
+  }
+
 
