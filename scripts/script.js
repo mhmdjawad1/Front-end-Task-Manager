@@ -43,3 +43,10 @@ document.getElementById('task-form').addEventListener('submit', function (e) {
     return;
   }
   errorMsg.style.display = 'none';
+
+
+    tasks.push({ text: input.value, completed: false });
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+  input.value = '';
+  renderTasks();
+});
