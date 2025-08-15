@@ -50,3 +50,12 @@ document.getElementById('task-form').addEventListener('submit', function (e) {
   input.value = '';
   renderTasks();
 });
+
+
+
+
+document.getElementById('filters').addEventListener('click', function (e) {
+  if (e.target.tagName === 'BUTTON') {
+    renderTasks(e.target.dataset.filter);6
+  }
+});
