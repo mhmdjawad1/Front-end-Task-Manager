@@ -29,3 +29,9 @@ renderTasks();
 
 
 
+
+
+document.getElementById('task-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+
