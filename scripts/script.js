@@ -95,3 +95,10 @@ document.getElementById('task-list').addEventListener('click', function (e) {
   }
 
 
+   if (e.target.classList.contains('delete')) {
+    tasks.splice(index, 1);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    renderTasks();
+  }
+});
+
