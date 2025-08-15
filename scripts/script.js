@@ -75,4 +75,13 @@ document.getElementById('task-list').addEventListener('click', function (e) {
     renderTasks();
   }
 
+    if (e.target.classList.contains('edit')) {
+    const spanOrInput = li.querySelector('span, input[type="text"]');
+    if (e.target.textContent === 'Edit') {
+    
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.value = task.text;
+      li.replaceChild(input, spanOrInput);
+      e.target.textContent = 'Save';
 
